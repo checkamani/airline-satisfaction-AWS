@@ -17,3 +17,11 @@ Source: KaggleHub
 ```bash
 pip install -r requirements.txt
 python app/app.py
+
+## Run with Kubernetes
+Make sure Minikube is running:
+```bash
+minikube start
+kubectl apply -f k8s/
+kubectl get pods
+minikube service airline-satisfaction-svc
