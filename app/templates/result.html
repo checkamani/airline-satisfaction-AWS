@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Prediction Result</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; max-width: 800px; }
+    .card { border: 1px solid #ddd; padding: 16px; border-radius: 10px; }
+    a { text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h2>Prediction Result</h2>
+  <div class="card">
+    <p><b>Label:</b> {{ label }}</p>
+    <p><b>Prediction (0/1):</b> {{ prediction }}</p>
+    <p><b>Prob(satisfied):</b> {{ probability }}</p>
+  </div>
+  <br/>
+  <a href="/">← Back</a>
+</body>
+</html>
